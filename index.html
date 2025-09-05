@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome!</h1>
+    </header>
+
+    <main>
+        <section class="interactive-section">
+            <h2>Button Interaction</h2>
+            <p>Click the button below to change its text.</p>
+            <button id="magicButton">Click Me</button>
+        </section>
+
+        <section class="interactive-section">
+            <h2>Text Changer</h2>
+            <p>Type something in the box and press "Enter" to see it change.</p>
+            <input type="text" id="textInput" placeholder="Type here...">
+        </section>
+
+        <section class="form-section">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <span id="nameError" class="error"></span>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <span id="emailError" class="error"></span>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <span id="passwordError" class="error"></span>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
